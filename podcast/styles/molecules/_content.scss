@@ -1,0 +1,318 @@
+/// The purpose of this file is to define:
+///  - Styles for a range of elements (main)
+
+main {
+  background-color: $primary-color;
+
+  #presentation-box {
+    margin-top: 50px;
+
+    @include from-tablet {
+      margin-top: 100px;
+      margin-left: 50px;
+    }
+
+    @include from-desktop {
+      margin-top: 120px;
+      margin-left: 150px;
+    }
+
+    @include from-big-desktop {
+      margin-top: 160px;
+      margin-left: 200px;
+    }
+
+    #button-margin {
+      margin-top: 50px;
+    }
+  }
+
+  #polygon-episodes {
+    background-image: linear-gradient(
+      225deg,
+      $background-primary-gradient-color 0%,
+      $background-secondary-gradient-color 100%
+    );
+    clip-path: polygon(100% 0%, 100% 97%, 0 100%, 0% 3%);
+
+    @include from-tablet {
+      clip-path: polygon(100% 0%, 100% 91%, 0 100%, 0% 9%);
+    }
+
+    @include from-big-desktop {
+      clip-path: polygon(100% 0%, 100% 88%, 0 100%, 0% 12%);
+    }
+  }
+
+  #episodes-box {
+    padding-top: 70px;
+    padding-bottom: 150px;
+    margin-top: 30px;
+
+    @include from-tablet {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+
+    @include from-desktop {
+      padding-bottom: 200px;
+    }
+
+    @include from-big-desktop {
+      padding-top: 180px;
+    }
+
+    h2 {
+      padding-bottom: 18px;
+      color: $primary-color;
+
+      @include from-tablet {
+        margin-left: 50px;
+      }
+
+      @include from-desktop {
+        margin-left: 150px;
+      }
+
+      @include from-big-desktop {
+        margin-left: 200px;
+      }
+    }
+
+    .flex-box {
+      @include from-tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .col {
+        padding-bottom: 10px;
+
+        @include from-tablet {
+          padding: 15px;
+        }
+
+        @include from-desktop {
+          width: 40%;
+        }
+
+        @include from-big-desktop {
+          width: 550px;
+          padding: 30px;
+        }
+      }
+    }
+  }
+
+  #origin-box {
+    position: relative;
+    padding-bottom: 20px;
+
+    .flex-box {
+      @include from-tablet {
+        flex-direction: row;
+      }
+
+      .col {
+        padding: 20px;
+
+        @include from-tablet {
+          padding: 10px;
+        }
+
+        @include from-desktop {
+          padding: 20px;
+        }
+
+        #phone-image-container {
+          background: url(../images/phone.png) center no-repeat;
+          margin-top: -130px;
+          z-index: 1;
+          height: 519px;
+          background-size: 360px 519px;
+
+          @include from-tablet {
+            width: 330px;
+            background-size: 320.6px 462px;
+          }
+
+          @include from-big-desktop {
+            margin-top: -170px;
+            margin-left: 200px;
+            height: 660px;
+            width: 458px;
+            background-size: 415px 660px;
+          }
+        }
+
+        h2 {
+          @include from-tablet {
+            margin-left: 0px;
+            padding-bottom: 10px;
+          }
+        }
+
+        p {
+          text-align: unset;
+
+          @include from-tablet {
+            width: 85%;
+          }
+
+          @include from-desktop {
+            width: 464px;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #guests-box {
+    h2 {
+      margin: 20px;
+
+      @include from-tablet {
+        margin: 30px;
+      }
+
+      @include from-desktop {
+        margin-left: 150px;
+      }
+
+      @include from-big-desktop {
+        margin-left: 200px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .flex-box {
+      @include from-tablet {
+        flex-wrap: wrap;
+      }
+
+      .col {
+        flex-grow: 1;
+
+        @include from-tablet {
+          width: 50%;
+        }
+
+        @include from-desktop {
+          width: 33%;
+        }
+
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  #topics-box {
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+    @include from-tablet {
+      margin-bottom: 50px;
+    }
+
+    @include from-desktop {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      @include from-tablet {
+        margin: 30px;
+      }
+
+      @include from-desktop {
+        margin-left: 150px;
+      }
+
+      @include from-big-desktop {
+        margin-left: 200px;
+      }
+    }
+
+    .flex-box {
+      padding-top: 20px;
+
+      @include from-tablet {
+        margin-left: 30px;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      @include from-desktop {
+        flex-wrap: unset;
+      }
+
+      @include from-big-desktop {
+        padding-top: 80px;
+        margin-left: 200px;
+        max-width: 1000px;
+      }
+
+      .col {
+        padding: 20px;
+        text-align: center;
+
+        @include from-tablet {
+          padding: 40px;
+        }
+
+        @include from-desktop {
+          width: 23%;
+          padding: 20px;
+        }
+
+        h3 {
+          @include from-tablet {
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #polygon-last-news {
+    background-image: linear-gradient(
+      225deg,
+      $background-primary-gradient-color 0%,
+      $background-secondary-gradient-color 100%
+    );
+    clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 9%);
+
+    @include from-tablet {
+      clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 15%);
+    }
+
+    @include from-desktop {
+      clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 25%);
+    }
+  }
+
+  #last-news-box {
+    padding-top: 10px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    @include from-tablet {
+      padding: 100px 0;
+    }
+
+    @include from-desktop {
+      padding: 150px 0;
+    }
+
+    h2 {
+      margin-top: 34px;
+      padding: 25px;
+      color: $primary-color;
+    }
+  }
+}

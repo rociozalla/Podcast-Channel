@@ -1,0 +1,102 @@
+/// The purpose of this file is to define:
+///  - Styles for a range of elements (header)
+
+header {
+  height: 40px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    @include from-tablet {
+      padding: 10px;
+    }
+
+    @include from-desktop {
+      padding: 20px;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    img {
+      height: 24px;
+      width: 24px;
+      padding: 20px;
+
+      @include from-tablet {
+        height: 30px;
+        width: 30px;
+        padding: 10px;
+      }
+
+      @include from-desktop {
+        height: 36px;
+        width: 36px;
+        padding: 0px;
+      }
+    }
+
+    #btnmenu {
+      display: none;
+    }
+
+    .bars {
+      padding: 20px;
+
+      #bars-icon {
+        display: block;
+
+        @include from-tablet {
+          display: none;
+        }
+      }
+
+      #cross-icon {
+        display: none;
+      }
+    }
+
+    .menu {
+      width: 100%;
+      margin-top: 60px;
+      position: absolute;
+      background: $third-color;
+      transform: translate(150%);
+      transition: transform 2s;
+
+      @include from-tablet {
+        margin-top: 0px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: $primary-color;
+        transform: none;
+      }
+
+      ul li {
+        padding: 15px;
+
+        @include from-tablet {
+          display: inline-block;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+
+  .checkbox:checked {
+    & ~ .menu {
+      display: block;
+      transform: translate(0%);
+    }
+
+    & ~ .bars #bars-icon {
+      display: none;
+    }
+
+    & ~ .bars #cross-icon {
+      display: block;
+    }
+  }
+}

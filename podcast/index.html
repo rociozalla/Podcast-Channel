@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Rocio Zalla">
+    <meta name="description" content="podcast channel">
+    <meta name="keywords" content="podcast, programacion, tecnologia, mujeres, codigo, seguridad, informatica">
+    <title>Podcast Channel</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap">
+</head>
+<body>  
+    <header>
+        <nav> 
+            <img src="./images/logo.svg" alt="logo"> 
+            <input type="checkbox" class="checkbox" id="btnmenu"/> 
+            <label for="btnmenu" class="bars">
+                <i class="fas fa-bars" id="bars-icon"></i>
+                <i class="fas fa-times" id="cross-icon"></i>
+            </label> 
+            <div class="menu"> 
+                <ul>
+                    <li><a class="lg-thin-text" href= "#episodes-box">Episodios</a></li>
+                    <li><a class="lg-thin-text" href= "#origin-box">Nosotros</a></li>
+                    <li><a class="lg-thin-text" href= "#guests-box">Entrevistas</a></li>
+                    <li><a class="lg-thin-text" href= "#topics-box">Tópicos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> 
+
+    <main>
+        <section class="container"> 
+            <div id="presentation-box">
+                <div class="title-wrapper">
+                    <h1> 
+                        <span>Hello</span>
+                        <span class="crossed-out-word">world</span>
+                        <span>pale blue dot</span>
+                        <span class="dot">.</span>
+                    </h1>
+                </div>
+                <div class="mobile-visible-only paragraph-wrapper">
+                    <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>   
+                </div>
+                <div class="tablet-visible-up paragraph-wrapper">
+                    <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+                </div>
+                <a href="#" class="button uppercase" id="button-margin">conocé más</a> 
+            </div>
+        </section>
+        <section class="container" id="polygon-episodes">
+            <div id="episodes-box">  
+                <h2>Episodios</h2>
+                <div class="flex-box"> 
+                    <div class="col">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt" allow="encrypted-media"></iframe>         
+                    </div>
+                    <div class="col">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="col">
+                        <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" allow="encrypted-media"></iframe>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div id="origin-box">
+                <div class="flex-box">
+                    <div class="col">
+                        <div id="phone-image-container"></div> 
+                    </div>
+                    <div class="col" id="origin-description-container">
+                        <div class="sub-title-wrapper">
+                            <h2>De dónde venimos</h2>
+                        </div>
+                        <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+                        <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div id="guests-box"> 
+                <h2>Invitadas/os estelares</h2>
+                <div class="flex-box"> 
+                    <div class="col">
+                        <img src="./images/grace-hopper.png" alt="Grace Hopper">
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/katie-bouman.png" alt="Katie Bouman"> 
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/margaret-hamilton.png" alt="Margaret Hamilton"> 
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/univac-computer.png" alt="Univac computer"> 
+                    </div>
+                    <div class="col">     
+                        <img src="./images/eniac-computer.png" alt="Eniac computer">  
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/susan-kare.png" alt="Susan Kare"> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div id="topics-box"> 
+                <div class="sub-title-wrapper">
+                    <h2>Algunos de nuestros temas</h2>    
+                </div>
+                <div class="flex-box"> 
+                    <div class="col">
+                        <img src="./images/icon1.svg" alt="Trabajo remoto">
+                        <h3>Trabajo remoto</h3>
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/icon2.svg" alt="Repensando la programacion">
+                        <h3>Repensando la programación</h3>
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/icon3.svg" alt="Bases del codigo">
+                        <h3>Bases del código</h3>
+                    </div>
+                    <div class="col"> 
+                        <img src="./images/icon4.svg" alt="Seguridad informatica">
+                        <h3>Seguridad informática</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="polygon-last-news">
+            <div id="last-news-box">
+                <h2>¿Querés las últimas novedades?</h2>
+                <a href="#" class="button uppercase centered">escuchá los episodios</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="partial-size" class="centered">
+            <span class="copyright"> 
+                <span class="md-thin-text ">© 2019- Hello blue pale dot</span> 
+            </span>
+            <span class="media"> 
+                <a title="spotify" href="https://www.spotify.com/ar"><i class="fab fa-spotify"></i></a>
+                <a title="instagram" href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <a title="twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a title="facebook" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a title="telegram" href="https://web.telegram.org"><i class="fab fa-telegram"></i></a>
+            </span>  
+        </div>
+    </footer>
+</body>
+</html>

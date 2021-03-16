@@ -1,0 +1,57 @@
+/// The purpose of this file is to define:
+///  - Styles for a range of elements (footer)
+
+footer {
+  width: 100%;
+  text-align: center;
+
+  @include from-tablet {
+    display: inline-block;
+    text-align: unset;
+  }
+
+  #partial-size {
+    width: 100%;
+
+    @include from-tablet {
+      width: 90%;
+    }
+
+    .copyright {
+      padding-top: 17px;
+      display: block;
+      float: none;
+
+      @include from-tablet {
+        float: left;
+      }
+    }
+
+    .media {
+      display: block;
+      float: none;
+
+      @include from-tablet {
+        float: right;
+      }
+
+      i {
+        font-size: 16px;
+        line-height: $general-line-height;
+        padding: 18px;
+
+        @include from-tablet {
+          font-size: 18px;
+        }
+
+        &:hover {
+          color: $hover-color;
+        }
+
+        &:active {
+          color: #060a24;
+        }
+      }
+    }
+  }
+}

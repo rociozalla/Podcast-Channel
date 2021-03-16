@@ -1,0 +1,12 @@
+/// @author rzalla
+///  - Base elements that can be extended or simply used as they are defined here.
+
+@import "./_reset.scss";
+
+// Base styles
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: $foreground-opacity;
+}

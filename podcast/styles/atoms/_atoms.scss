@@ -1,0 +1,146 @@
+/// The purpose of this file is to define:
+///  - Particular styles, elements with classes.
+
+.lg-thin-text {
+  font-size: 16px;
+  color: $primary-color;
+  background-color: $third-color;
+  text-transform: uppercase;
+  font-family: $font-family-mono;
+  letter-spacing: $general-letter-spacing;
+  line-height: $general-line-height;
+
+  @include from-tablet {
+    font-size: 14px;
+    color: $secondary-color;
+    background-color: $primary-color;
+  }
+
+  @include from-desktop {
+    font-size: 16px;
+  }
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: line-through;
+  }
+
+  &:active {
+    color: $active-color;
+  }
+}
+
+.md-thin-text {
+  font-family: $font-family-mono;
+  font-size: 14px;
+  color: $secondary-color;
+  letter-spacing: $general-letter-spacing;
+  line-height: $general-line-height;
+
+  @include from-tablet {
+    font-family: $font-family-mono;
+    font-size: 16px;
+    color: $secondary-color;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.crossed-out-word {
+  text-decoration: line-through;
+}
+
+.dot {
+  color: $secondary-color;
+
+  @include from-tablet {
+    color: $third-color;
+  }
+}
+
+.button {
+  background-color: $hover-color;
+  color: $secondary-color;
+  font-weight: bold;
+  text-align: center;
+  font-family: $font-family-mono;
+  font-size: 16px;
+  line-height: $general-line-height;
+  padding: 15px;
+  display: block;
+
+  @include from-tablet {
+    font-size: 18px;
+    line-height: $general-line-height;
+    padding: 15px 60px;
+    width: fit-content;
+  }
+
+  &:hover {
+    color: $primary-color;
+    background-image: linear-gradient(
+      225deg,
+      $button-primary-gradient-color 0%,
+      $button-secondary-gradient-color 100%
+    );
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  width: 70%;
+
+  @include from-tablet {
+    width: 100%;
+  }
+}
+
+.sub-title-wrapper {
+  width: 288px;
+  height: 84px;
+
+  @include from-tablet {
+    width: 100%;
+  }
+}
+
+.paragraph-wrapper {
+  @include from-tablet {
+    width: 630px;
+  }
+}
+
+.mobile-visible-only {
+  display: block;
+
+  @include from-tablet {
+    display: none;
+  }
+}
+
+.tablet-visible-up {
+  display: none;
+
+  @include from-tablet {
+    display: block;
+  }
+}
+
+.flex-box {
+  @include from-tablet {
+    display: flex;
+  }
+}

@@ -1,0 +1,13 @@
+///
+/// @author rzalla
+/// Entry point. This file is used as a main file to bind variables and sources.
+/// run `sass --watch main.scss main.css` to generate the css file and watch for changes.
+
+@import './utilities/variables';
+@import './utilities/base';
+@import './utilities/mixins';
+@import './quarks/quarks';
+@import './molecules/header';
+@import './molecules/content';
+@import './molecules/footer';
+@import './atoms/atoms';

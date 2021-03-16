@@ -1,0 +1,38 @@
+/// The purpose of this file is to define:
+///  - Variables that will be used throughout the whole site (color palletes, sizes, fonts, etc)
+
+// Media query variables
+$phone-size: 576px; // Small devices (landscape-phones, 576px and up)
+$tablet-size: 768px; // Medium devices (tablets, 768px and up)
+$desktop-size: 992px; // Large devices (desktops, 992px and up)
+$tv-size: 1200px; // Extra large devices (large desktops, 1200px and up)
+
+// Text and background colors
+$primary-color: #ffffff;
+$secondary-color: #060A24;
+$third-color: #0000ec;
+
+// Hover color
+$hover-color: #00f3bb;
+
+// Active color
+$active-color:  rgba(6,10,36,0.56);
+
+// Background colors
+$button-primary-gradient-color: #0000fe;
+$button-secondary-gradient-color: #00f0b8; 
+$background-primary-gradient-color: #0000ff;
+$background-secondary-gradient-color: #0000a3;
+
+// Opacity
+$foreground-opacity: 100%;
+
+// Fonts
+$font-family-mono: "IBM Plex Mono", monospace;
+$font-family-sans: "IBM Plex Sans", sans-serif;
+
+// Line height
+$general-line-height: 150%;
+
+// Letter spacing
+$general-letter-spacing: 0px;

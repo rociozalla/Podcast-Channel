@@ -1,0 +1,27 @@
+/// The purpose of this file is to define:
+///  - Mixins.
+
+// Mixins
+@mixin phone-only {
+  @media (min-width: $phone-size) {
+    @content;
+  }
+}
+
+@mixin from-tablet {
+  @media (min-width: $tablet-size) {
+    @content;
+  }
+}
+
+@mixin from-desktop {
+  @media (min-width: $desktop-size) {
+    @content;
+  }
+}
+
+@mixin from-big-desktop {
+  @media (min-width: $tv-size) {
+    @content;
+  }
+}
